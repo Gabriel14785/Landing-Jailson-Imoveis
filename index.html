@@ -31,10 +31,10 @@
 <body class="bg-surface text-on-surface antialiased font-body-md selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
 <!-- 1. Header Sticky (Shared Components Anchor: TopNavBar) -->
 <header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40 shadow-sm transition-all duration-200">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-desktop h-20">
+<div class="flex justify-between items-center gap-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-margin-desktop h-16 lg:h-20">
 <!-- Brand Logo -->
-<a class="flex items-center gap-3 group" href="#">
-<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm group-hover:bg-primary transition-colors">
+<a class="flex items-center gap-2 sm:gap-3 group shrink-0" href="#inicio">
+<div class="w-10 h-10 shrink-0 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm group-hover:bg-primary transition-colors">
 <svg class="w-6 h-6 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
 <path d="M3 21h18"></path>
 <path d="M5 21V7l8-4v18"></path>
@@ -44,9 +44,9 @@
 <path d="M9 17h1"></path>
 </svg>
 </div>
-<div class="flex flex-col">
-<span class="font-headline-md text-headline-md font-bold tracking-tight text-primary">Jailson Imóveis</span>
-<span class="font-label-md text-label-md text-on-surface-variant font-medium -mt-1 tracking-wider uppercase">Consultoria Imobiliária</span>
+<div class="flex flex-col leading-none min-w-0">
+<span class="font-headline-sm text-headline-sm lg:font-headline-md lg:text-headline-md font-bold tracking-tight text-primary whitespace-nowrap">Jailson Imóveis</span>
+<span class="mt-0.5 text-[10px] sm:text-label-md font-label-md text-on-surface-variant font-medium tracking-wider uppercase whitespace-nowrap">Consultoria Imobiliária</span>
 </div>
 </a>
 <!-- Desktop Navigation Links -->
@@ -66,7 +66,7 @@
 <span>Falar no WhatsApp</span>
 </a>
 <!-- Mobile Menu Trigger -->
-<button aria-label="Abrir menu" class="md:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="lg:hidden -mr-2 p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors" id="menu-toggle" type="button">
 <svg class="w-6 h-6 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
 <line x1="4" x2="20" y1="6" y2="6"></line>
 <line x1="4" x2="20" y1="12" y2="12"></line>
@@ -74,6 +74,16 @@
 </svg>
 </button>
 </div>
+</div>
+<div class="hidden lg:hidden border-t border-outline-variant/40 bg-surface" id="mobile-menu">
+<nav class="flex flex-col px-4 sm:px-6 py-3">
+<a class="py-3 font-label-lg text-label-lg text-primary font-semibold border-b border-outline-variant/30" href="#inicio">Início</a>
+<a class="py-3 font-label-lg text-label-lg text-on-surface-variant border-b border-outline-variant/30" href="#imoveis">Imóveis</a>
+<a class="py-3 font-label-lg text-label-lg text-on-surface-variant border-b border-outline-variant/30" href="#anuncie">Anuncie seu imóvel</a>
+<a class="py-3 font-label-lg text-label-lg text-on-surface-variant border-b border-outline-variant/30" href="#sobre">Sobre</a>
+<a class="py-3 font-label-lg text-label-lg text-on-surface-variant" href="#contato">Contato</a>
+<a class="mt-3 mb-2 inline-flex items-center justify-center gap-2 bg-secondary text-on-secondary px-5 h-11 rounded-xl font-label-lg text-label-lg" href="https://wa.me/5500000000000" rel="noopener noreferrer" target="_blank">Falar no WhatsApp</a>
+</nav>
 </div>
 </header>
 <main class="flex-grow">
@@ -220,8 +230,8 @@
 <!-- Bento Grid Container -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 <!-- CARD 1 (Bento Principal - Span 2 colunas no desktop) -->
-<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col md:flex-row">
-<div class="md:w-1/2 relative min-h-[280px]">
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col lg:flex-row">
+<div class="lg:w-1/2 relative min-h-[280px]">
 <div class="w-full h-full bg-cover bg-center absolute inset-0" alt="Modern spacious apartment interior in Jardim Paulista featuring a gourmet balcony with floor to ceiling glass windows, warm hardwood flooring, elegant contemporary teal furnishings, and lush green urban treetop views." style="background-image: url('img/image-2.jpg')"></div>
 <div class="absolute top-4 left-4">
 <span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
@@ -229,7 +239,7 @@
               </span>
 </div>
 </div>
-<div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-between">
+<div class="p-6 md:p-8 lg:w-1/2 flex flex-col justify-between">
 <div>
 <span class="font-label-md text-label-md text-on-surface-variant block mb-1">Jardim Paulista, São Paulo</span>
 <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Apartamento com varanda gourmet no Jardim Paulista</h3>
@@ -338,8 +348,8 @@
 </div>
 </div>
 <!-- CARD 4 (Apartamento Locação Pinheiros - 2 colunas para fechar o Bento) -->
-<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col md:flex-row-reverse">
-<div class="md:w-1/2 relative min-h-[260px]">
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col lg:flex-row-reverse">
+<div class="lg:w-1/2 relative min-h-[260px]">
 <div class="w-full h-full bg-cover bg-center absolute inset-0" alt="Modern renovated 2-bedroom rental apartment living room in Pinheiros with large windows, bright natural lighting, integrated open concept kitchen, clean lines and light scandinavian-teal decor." style="background-image: url('img/image-5.jpg')"></div>
 <div class="absolute top-4 left-4">
 <span class="inline-flex items-center px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-sm">
@@ -347,7 +357,7 @@
               </span>
 </div>
 </div>
-<div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-between">
+<div class="p-6 md:p-8 lg:w-1/2 flex flex-col justify-between">
 <div>
 <span class="font-label-md text-label-md text-on-surface-variant block mb-1">Pinheiros, São Paulo</span>
 <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Apartamento 2 dormitórios para alugar em Pinheiros</h3>
