@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Jailson Imóveis | Imóveis em São Paulo e Região</title>
+<!-- Fonts Google -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+
+<link rel="stylesheet" href="./styles.css"/>
+<link rel="icon" href="./favicon.svg" type="image/svg+xml"/>
+<meta name="theme-color" content="#0f766e"/>
+<meta name="description" content="Compra e locação de imóveis em São Paulo e região. Compare valor, condomínio, IPTU e metragem e fale direto pelo WhatsApp."/>
+<meta name="robots" content="noindex, nofollow"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:site_name" content="Jailson Imóveis"/>
+<meta property="og:title" content="Jailson Imóveis | Imóveis em São Paulo e Região"/>
+<meta property="og:description" content="Compra e locação de imóveis em São Paulo e região. Compare valor, condomínio, IPTU e metragem e fale direto pelo WhatsApp."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Jailson Imóveis | Imóveis em São Paulo e Região"/>
+<meta name="twitter:description" content="Compra e locação de imóveis em São Paulo e região. Compare valor, condomínio, IPTU e metragem e fale direto pelo WhatsApp."/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","name":"Jailson Imóveis","makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Compra de imóveis"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Locação"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Avaliação e anúncio"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Assessoria na documentação"}}]}</script>
+</head>
+<body class="bg-surface text-on-surface antialiased font-body-md selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<!-- 1. Header Sticky (Shared Components Anchor: TopNavBar) -->
+<header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40 shadow-sm transition-all duration-200">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-margin-desktop h-20">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm group-hover:bg-primary transition-colors">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M3 21h18"></path>
+<path d="M5 21V7l8-4v18"></path>
+<path d="M19 21V11l-6-4"></path>
+<path d="M9 9h1"></path>
+<path d="M9 13h1"></path>
+<path d="M9 17h1"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold tracking-tight text-primary">Jailson Imóveis</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium -mt-1 tracking-wider uppercase">Consultoria Imobiliária</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-6">
+<a class="font-label-lg text-label-lg text-primary border-b-2 border-primary pb-1 font-semibold" href="#inicio">Início</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary pb-1 transition-colors duration-200" href="#imoveis">Imóveis</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary pb-1 transition-colors duration-200" href="#anuncie">Anuncie seu imóvel</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary pb-1 transition-colors duration-200" href="#sobre">Sobre</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary pb-1 transition-colors duration-200" href="#contato">Contato</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-5 h-11 rounded-xl font-label-lg text-label-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-200 shadow-sm active:scale-95" href="https://wa.me/5500000000000" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+</svg>
+<span>Falar no WhatsApp</span>
+</a>
+<!-- Mobile Menu Trigger -->
+<button aria-label="Abrir menu" class="md:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<line x1="4" x2="20" y1="6" y2="6"></line>
+<line x1="4" x2="20" y1="12" y2="12"></line>
+<line x1="4" x2="20" y1="18" y2="18"></line>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- 2. Hero Section -->
+<section class="relative min-h-[640px] lg:min-h-[720px] flex items-center justify-center py-20 px-4 md:px-margin-desktop overflow-hidden" id="inicio">
+<!-- Full-bleed background image with subtle architecture -->
+<div class="absolute inset-0 bg-cover bg-center w-full h-full scale-105 transition-transform duration-1000 transform" alt="Modern architectural luxury residence in São Paulo with warm evening ambient lighting, sleek structural glass lines, serene minimalist landscaping, high ceiling interior glow, and refined sophisticated editorial aesthetic." style="background-image: url('img/image-1.jpg')"></div>
+<!-- Sophisticated dark gradient overlay for optimal editorial legibility -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#00201e]/85 via-[#00201e]/60 to-[#00201e]/90 backdrop-blur-[1px]"></div>
+<div class="relative z-10 max-w-5xl mx-auto text-center w-full">
+<!-- Tag / Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-lowest/15 border border-primary-fixed/40 text-primary-fixed backdrop-blur-md mb-6">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span>
+<span class="font-label-md text-label-md tracking-wider">São Paulo e região</span>
+</div>
+<!-- H1 Headline -->
+<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-surface-container-lowest mb-6 max-w-4xl mx-auto drop-shadow-sm font-headline-lg">
+          Encontre o imóvel certo para o seu próximo passo
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-xl text-body-xl text-surface-container max-w-2xl mx-auto mb-8 font-normal drop-shadow">
+          Compra e locação com informação clara: valor, condomínio, IPTU, metragem e o que realmente importa na região.
+        </p>
+<!-- Action CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+<a class="inline-flex items-center justify-center h-12 px-7 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-tertiary-container transition-all duration-200 shadow-md active:scale-95" href="#imoveis">
+            Quero comprar
+          </a>
+<a class="inline-flex items-center justify-center h-12 px-7 rounded-xl bg-transparent border-2 border-surface-container-lowest text-surface-container-lowest font-label-lg text-label-lg hover:bg-surface-container-lowest/15 backdrop-blur-sm transition-all duration-200 active:scale-95" href="#imoveis">
+            Quero alugar
+          </a>
+</div>
+<!-- Glassmorphism Search Console -->
+<div class="glass-panel p-4 md:p-6 rounded-2xl max-w-4xl mx-auto text-left">
+<form class="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4 items-end" onsubmit="event.preventDefault();">
+<!-- Finalidade -->
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-primary font-bold mb-1.5">Finalidade</label>
+<select class="w-full h-11 px-3 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all">
+<option value="comprar">Comprar</option>
+<option value="alugar">Alugar</option>
+</select>
+</div>
+<!-- Tipo -->
+<div class="md:col-span-3">
+<label class="block font-label-md text-label-md text-primary font-bold mb-1.5">Tipo de imóvel</label>
+<select class="w-full h-11 px-3 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all">
+<option value="apartamento">Apartamento</option>
+<option value="casa">Casa</option>
+<option value="cobertura">Cobertura</option>
+<option value="terreno">Terreno</option>
+</select>
+</div>
+<!-- Bairro -->
+<div class="md:col-span-3">
+<label class="block font-label-md text-label-md text-primary font-bold mb-1.5">Bairro ou região</label>
+<input class="w-full h-11 px-3.5 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all" placeholder="Ex: Pinheiros, Jardins, Itaim..." type="text"/>
+</div>
+<!-- Faixa de Preço -->
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md text-primary font-bold mb-1.5">Faixa de preço</label>
+<select class="w-full h-11 px-2.5 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm focus:outline-none focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all">
+<option value="todos">Qualquer valor</option>
+<option value="500k">Até R$ 500 mil</option>
+<option value="1.5m">R$ 500k a 1.5M</option>
+<option value="3m">R$ 1.5M a 3M</option>
+<option value="3m-plus">R$ 3M+</option>
+</select>
+</div>
+<!-- Search Button -->
+<div class="md:col-span-2">
+<button class="w-full h-11 px-4 rounded-xl bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 transition-all duration-200 shadow-md active:scale-95" type="submit">
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2.2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<circle cx="11" cy="11" r="8"></circle>
+<line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+</svg>
+<span>Buscar</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 3. Faixa de valor (Strip horizontal de micro-provas) -->
+<section class="border-y border-outline-variant/40 bg-surface-container-high/30 py-6 px-4 md:px-margin-desktop">
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Prova 1 -->
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-primary-container flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+<polyline points="22 4 12 14.01 9 11.01"></polyline>
+</svg>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-medium leading-snug">Anúncios conferidos antes de publicar</span>
+</div>
+<!-- Prova 2 -->
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-primary-container flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+<polyline points="14 2 14 8 20 8"></polyline>
+<line x1="16" x2="8" y1="13" y2="13"></line>
+<line x1="16" x2="8" y1="17" y2="17"></line>
+<polyline points="10 9 9 9 8 9"></polyline>
+</svg>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-medium leading-snug">Valor, condomínio e IPTU por escrito</span>
+</div>
+<!-- Prova 3 -->
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-primary-container flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+</svg>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-medium leading-snug">Atendimento direto no WhatsApp</span>
+</div>
+<!-- Prova 4 -->
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest border border-outline-variant/50 text-primary-container flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect>
+<line x1="16" x2="16" y1="2" y2="6"></line>
+<line x1="8" x2="8" y1="2" y2="6"></line>
+<line x1="3" x2="21" y1="10" y2="10"></line>
+</svg>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-medium leading-snug">Visita agendada sem enrolação</span>
+</div>
+</div>
+</section>
+<!-- 4. Imóveis em Destaque (Bento Grid) -->
+<section class="py-space-3xl px-4 md:px-margin-desktop max-w-7xl mx-auto" id="imoveis">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase mb-2 block">Portfólio Selecionado</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Imóveis em destaque</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-3 md:mt-0">
+          Cada imóvel é conferido antes de entrar no site: metragem, valores e documentação inicial.
+        </p>
+</div>
+<!-- Bento Grid Container -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- CARD 1 (Bento Principal - Span 2 colunas no desktop) -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col md:flex-row">
+<div class="md:w-1/2 relative min-h-[280px]">
+<div class="w-full h-full bg-cover bg-center absolute inset-0" alt="Modern spacious apartment interior in Jardim Paulista featuring a gourmet balcony with floor to ceiling glass windows, warm hardwood flooring, elegant contemporary teal furnishings, and lush green urban treetop views." style="background-image: url('img/image-2.jpg')"></div>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
+                À venda
+              </span>
+</div>
+</div>
+<div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">Jardim Paulista, São Paulo</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Apartamento com varanda gourmet no Jardim Paulista</h3>
+<div class="font-price-headline text-price-headline text-primary mb-5">
+                R$ 1.180.000
+              </div>
+<!-- Property Attributes -->
+<div class="grid grid-cols-2 gap-3 py-4 border-y border-outline-variant/30 mb-6">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<svg class="w-4 h-4 text-primary stroke-current fill-none stroke-[1.75]" viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="M19 9l-5 5-4-4-3 3"></path></svg>
+<span>112 m² área</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<svg class="w-4 h-4 text-primary stroke-current fill-none stroke-[1.75]" viewbox="0 0 24 24"><path d="M2 4v16"></path><path d="M2 8h18a2 2 0 0 1 2 2v10"></path><path d="M2 17h20"></path><path d="M6 8v9"></path></svg>
+<span>3 quartos</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<svg class="w-4 h-4 text-primary stroke-current fill-none stroke-[1.75]" viewbox="0 0 24 24"><path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"></path><path d="M6 12V5a2 2 0 0 1 2-2h3v9"></path></svg>
+<span>2 banheiros</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<svg class="w-4 h-4 text-primary stroke-current fill-none stroke-[1.75]" viewbox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="3"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M20.4 14.5L16 10 4 20"></path></svg>
+<span>2 vagas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md text-outline">Ref: JI-1049</span>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container transition-colors group" href="#contato">
+<span>Ver detalhes</span>
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2] transition-transform group-hover:translate-x-1" viewbox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 2 (Casa Alto de Pinheiros) -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col">
+<div class="relative h-56">
+<div class="w-full h-full bg-cover bg-center" alt="Refurbished single story modern home facade in Alto de Pinheiros with warm wood panelling, minimalist garden pathway, integrated glass panels, and clear afternoon sunlight." style="background-image: url('img/image-3.jpg')"></div>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
+                À venda
+              </span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">Alto de Pinheiros, São Paulo</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Casa térrea reformada no Alto de Pinheiros</h3>
+<div class="font-price-headline text-price-headline text-primary mb-4">
+                R$ 2.450.000
+              </div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm py-3 border-y border-outline-variant/30 mb-4">
+<span>280 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 quartos</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 banheiros</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 vagas</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md text-outline">Ref: JI-2018</span>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container transition-colors group" href="#contato">
+<span>Ver detalhes</span>
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2] transition-transform group-hover:translate-x-1" viewbox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 3 (Cobertura Duplex Vila Nova Conceição) -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col">
+<div class="relative h-56">
+<div class="w-full h-full bg-cover bg-center" alt="Luxury duplex penthouse terrace overlooking São Paulo skyline at Vila Nova Conceição with wooden deck, comfortable outdoor lounge furniture, private jacuzzi, and twilight architectural illumination." style="background-image: url('img/image-4.jpg')"></div>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-sm">
+                À venda
+              </span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">Vila Nova Conceição, São Paulo</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cobertura duplex com terraço na Vila Nova Conceição</h3>
+<div class="font-price-headline text-price-headline text-primary mb-4">
+                R$ 3.900.000
+              </div>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm py-3 border-y border-outline-variant/30 mb-4">
+<span>210 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 quartos</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>4 banheiros</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>3 vagas</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md text-outline">Ref: JI-3092</span>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container transition-colors group" href="#contato">
+<span>Ver detalhes</span>
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2] transition-transform group-hover:translate-x-1" viewbox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 4 (Apartamento Locação Pinheiros - 2 colunas para fechar o Bento) -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-2xl border border-outline-variant/60 overflow-hidden custom-card-shadow custom-card-hover flex flex-col md:flex-row-reverse">
+<div class="md:w-1/2 relative min-h-[260px]">
+<div class="w-full h-full bg-cover bg-center absolute inset-0" alt="Modern renovated 2-bedroom rental apartment living room in Pinheiros with large windows, bright natural lighting, integrated open concept kitchen, clean lines and light scandinavian-teal decor." style="background-image: url('img/image-5.jpg')"></div>
+<div class="absolute top-4 left-4">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-sm">
+                Para alugar
+              </span>
+</div>
+</div>
+<div class="p-6 md:p-8 md:w-1/2 flex flex-col justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant block mb-1">Pinheiros, São Paulo</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Apartamento 2 dormitórios para alugar em Pinheiros</h3>
+<div class="font-price-headline text-price-headline text-secondary mb-4">
+                R$ 4.200 <span class="font-body-md text-body-md font-normal text-on-surface-variant">/mês</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+                Excelente iluminação natural, a poucos passos do metrô e com serviços essenciais acessíveis a pé.
+              </p>
+<div class="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm py-3 border-y border-outline-variant/30 mb-6">
+<span>68 m²</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>2 quartos</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>1 banheiro</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>1 vaga</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-md text-label-md text-outline">Ref: JI-4055</span>
+<a class="inline-flex items-center gap-1.5 font-label-lg text-label-lg text-secondary hover:text-on-secondary-container transition-colors group" href="#contato">
+<span>Ver detalhes</span>
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2] transition-transform group-hover:translate-x-1" viewbox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Por que escolher a Jailson Imóveis -->
+<section class="py-space-3xl px-4 md:px-margin-desktop bg-surface-container-low/50 border-t border-outline-variant/30" id="sobre">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase mb-2 block">Diferenciais Operacionais</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Por que escolher a Jailson Imóveis</h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+            A gente conhece a rotina dos bairros e explica cada etapa por escrito antes de você decidir.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Bloco 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/60 custom-card-shadow custom-card-hover flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-6">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<circle cx="12" cy="10" r="3"></circle>
+<path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8z"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Conhecimento de região</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Orientação detalhada sobre a dinâmica real de cada bairro: horários de pico, proximidade de transporte coletivo, polos comerciais e vida cotidiana.
+            </p>
+</div>
+<!-- Bloco 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/60 custom-card-shadow custom-card-hover flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-6">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+<path d="m9 12 2 2 4-4"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Negociação transparente</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Todos os valores, encargos condominiais, parcelas de IPTU e condições de pagamento colocados por escrito e conferidos antes de você decidir.
+            </p>
+</div>
+<!-- Bloco 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/60 custom-card-shadow custom-card-hover flex flex-col">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center mb-6">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<circle cx="7.5" cy="15.5" r="5.5"></circle>
+<path d="m21 2-9.6 9.6"></path>
+<path d="m15.5 7.5 3 3L22 7l-3-3"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Do anúncio à chave</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Suporte contínuo: coordenação das visitas presenciais, elaboração da proposta, análise de certidões e vistoria fotográfica de entrega.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Para proprietários — Anuncie seu imóvel -->
+<section class="py-space-3xl px-4 md:px-margin-desktop max-w-7xl mx-auto" id="anuncie">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Coluna Esquerda: Texto Explicativo -->
+<div class="lg:col-span-5">
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase mb-2 block">Proprietários</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Anuncie seu imóvel com tranquilidade</h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant mb-8">
+            Mostre seu imóvel para quem procura de verdade, sem custo inicial.
+          </p>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-1">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Registro de fotos e valores sem custo inicial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A avaliação e o cadastro do imóvel são gratuitos até o fechamento da negociação.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-1">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Visitantes filtrados antes da visita</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Checamos a capacidade financeira e o perfil de compra para evitar visitas improdutivas.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0 mt-1">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold mb-1">Você define o valor final</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Orientamos com dados reais de mercado, mas a palavra final sobre preço e proposta é sempre sua.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Coluna Direita: Formulário Elegante -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-10 rounded-2xl border border-outline-variant/60 custom-card-shadow">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Cadastrar interesse de anúncio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Preencha os dados básicos. Entraremos em contato via WhatsApp para combinar os detalhes.</p>
+<form class="space-y-4" onsubmit="event.preventDefault();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">Nome completo</label>
+<input class="w-full h-11 px-4 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Seu nome" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">Telefone / WhatsApp</label>
+<input class="w-full h-11 px-4 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="(DDD) 9XXXX-XXXX" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">Tipo de imóvel</label>
+<select class="w-full h-11 px-3 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+<option value="Apartamento">Apartamento</option>
+<option value="Casa">Casa</option>
+<option value="Cobertura">Cobertura</option>
+<option value="Comercial">Comercial</option>
+<option value="Terreno">Terreno</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">Bairro</label>
+<input class="w-full h-11 px-4 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Ex: Pinheiros, Perdizes..." required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5">Mensagem adicional (opcional)</label>
+<textarea class="w-full p-4 bg-surface-container-lowest border border-outline-variant/60 rounded-xl text-on-surface text-body-sm font-body-sm placeholder:text-outline focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Metragem aproximada, valor pretendido ou especificidades do imóvel..." rows="3"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full h-12 bg-primary-container hover:bg-tertiary-container text-on-primary font-label-lg text-label-lg rounded-xl shadow-md transition-all duration-200 active:scale-95" type="submit">
+                  Quero anunciar
+                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Seção de Contato -->
+<section class="py-space-3xl px-4 md:px-margin-desktop bg-surface-container-high/20 border-t border-outline-variant/30" id="contato">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase mb-2 block">Canais Diretos</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-3">Fale com a Jailson Imóveis</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Tire dúvidas sobre os imóveis anunciados ou agende uma visita.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Canais de Atendimento -->
+<div class="lg:col-span-5 space-y-4">
+<!-- Canal WhatsApp -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 custom-card-shadow flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+</svg>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-lg mb-1">WhatsApp</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Atendimento rápido e direto via mensagem para dúvidas ou agendamentos.</p>
+<a class="font-label-lg text-label-lg text-primary hover:underline" href="https://wa.me/5500000000000" rel="noopener noreferrer" target="_blank">Iniciar conversa [AJUSTAR]</a>
+</div>
+</div>
+<!-- Canal E-mail -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 custom-card-shadow flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center shrink-0">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-lg mb-1">E-mail</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">Envio de propostas e documentação formal.</p>
+<span class="font-label-lg text-label-lg text-on-surface">contato@jailsonimoveis.com.br [AJUSTAR]</span>
+</div>
+</div>
+<!-- Canal Endereço -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 custom-card-shadow flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24">
+<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-lg mb-1">Atendimento Presencial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-1">São Paulo, SP [AJUSTAR - Endereço sob consulta]</p>
+<span class="font-label-md text-label-md text-outline">Reuniões sob agendamento prévio</span>
+</div>
+</div>
+</div>
+<!-- Mapa de Referência Conceitual / Vetorial -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/60 custom-card-shadow">
+<div class="flex items-center justify-between mb-4">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Região de atuação prioritária</span>
+<span class="font-label-md text-label-md text-outline bg-surface-container-high/50 px-3 py-1 rounded-full">Zona Sul e Oeste de SP</span>
+</div>
+<!-- Vetor Moderno de Malha Urbana -->
+<div class="relative w-full h-[320px] rounded-xl border border-outline-variant/40 overflow-hidden">
+<iframe class="absolute inset-0 w-full h-full" src="https://maps.google.com/maps?q=S%C3%A3o+Paulo%2C+SP&amp;z=11&amp;output=embed" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa da região de atuação"></iframe>
+<div class="absolute left-3 bottom-3 bg-surface-container-lowest/95 px-3 py-1.5 rounded-lg border border-outline-variant/60 shadow-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">São Paulo &amp; Região</span>
+<span class="font-label-md text-label-md text-outline">Área de atuação [AJUSTAR: endereço]</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline text-center mt-4">
+              Atuação com foco em Pinheiros, Jardins, Vila Nova Conceição, Itaim Bibi e proximidades.
+            </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 8. Rodapé (Shared Components Anchor: Footer) -->
+<footer class="w-full bg-inverse-surface border-t border-outline/20">
+<div class="max-w-7xl mx-auto px-margin-desktop py-space-3xl">
+<!-- Linhas de Topo do Rodapé -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-outline/20">
+<!-- Identidade e Proposta -->
+<div class="md:col-span-4">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24">
+<path d="M3 21h18"></path>
+<path d="M5 21V7l8-4v18"></path>
+<path d="M19 21V11l-6-4"></path>
+</svg>
+</div>
+<span class="font-headline-md text-headline-md font-bold text-inverse-on-surface">Jailson Imóveis</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70 leading-relaxed mb-6">
+            Consultoria imobiliária pautada na transparência, checagem prévia de documentação e informações completas para decisões seguras em São Paulo.
+          </p>
+</div>
+<!-- Colunas de Links -->
+<div class="md:col-span-2 md:col-start-6">
+<h5 class="font-label-md text-label-md text-primary-fixed font-bold tracking-wider uppercase mb-4">Imóveis</h5>
+<ul class="space-y-2.5">
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#imoveis">Início</a></li>
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#imoveis">Imóveis à Venda</a></li>
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#imoveis">Imóveis para Locação</a></li>
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#anuncie">Anuncie seu Imóvel</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-md text-label-md text-primary-fixed font-bold tracking-wider uppercase mb-4">Institucional</h5>
+<ul class="space-y-2.5">
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#sobre">Sobre Nós</a></li>
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#contato">Contato</a></li>
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#">Política de Privacidade</a></li>
+<li><a class="font-body-sm text-body-sm text-inverse-on-surface/70 hover:text-inverse-on-surface transition-colors duration-150" href="#">Termos de Uso</a></li>
+</ul>
+</div>
+<div class="md:col-span-3">
+<h5 class="font-label-md text-label-md text-primary-fixed font-bold tracking-wider uppercase mb-4">Suporte &amp; Contato</h5>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70 mb-2">contato@jailsonimoveis.com.br [AJUSTAR]</p>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/70">São Paulo, SP [AJUSTAR]</p>
+</div>
+</div>
+<!-- AVISO EM DESTAQUE BEM VISÍVEL NO RODAPÉ -->
+<div class="mt-8 p-4 rounded-xl bg-inverse-surface border border-outline/30 text-center">
+<p class="font-label-lg text-label-lg text-primary-fixed font-semibold tracking-wide">
+          Site de demonstração. Imóveis, valores e fotos são fictícios.
+        </p>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/60 mt-1">
+          Projeto demonstrativo desenvolvido para apresentação conceitual. Sem vínculo comercial.
+        </p>
+</div>
+<!-- Copyright Text -->
+<div class="mt-8 flex flex-col md:flex-row items-center justify-between font-body-sm text-body-sm text-inverse-on-surface/60 gap-4">
+<span>© <span id="year"></span> Jailson Imóveis. Todos os direitos reservados. Site demonstrativo desenvolvido para apresentação institucional.</span>
+<div class="flex items-center gap-6">
+<a class="hover:text-primary-fixed transition-colors" href="#">Privacidade</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">Termos</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- 9. Botão Flutuante de WhatsApp -->
+<aside class="fixed bottom-7 right-7 z-50 flex items-center group">
+<!-- Tooltip / Label sutil no hover -->
+<div class="mr-3 px-3 py-1.5 rounded-lg bg-on-surface text-surface-container-lowest font-label-md text-label-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+      Fale conosco no WhatsApp
+    </div>
+<a aria-label="Falar no WhatsApp" class="w-14 h-14 rounded-full bg-primary-container hover:bg-tertiary-container text-on-primary flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 active:scale-95" href="https://wa.me/5500000000000" rel="noopener noreferrer" target="_blank">
+<svg class="w-7 h-7 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+</svg>
+</a>
+</aside>
+  <script src="./script.js" defer></script>
+</body></html>
